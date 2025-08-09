@@ -3,12 +3,13 @@ import requests
 from dotenv import load_dotenv
 
 load_dotenv()
+DREADNODE_API_KEY = os.getenv("DREADNODE_API_KEY")
 
 CHALLENGE = "bear4"
 CRUCIBLE_URL = "https://platform.dreadnode.io"
 CHALLENGE_URL = "https://bear4.platform.dreadnode.io"
 
-DREADNODE_API_KEY = os.getenv("DREADNODE_API_KEY")
+
 
 
 def submit_flag(flag):
